@@ -1,0 +1,28 @@
+{
+  "name": "oxygen-script",
+  "version": "1.0.0",
+  "description": "functional extension in javascript",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev":"parcel ./src/index.html",
+    "build":"parcel ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MinSiThu/oxygen-script.git"
+  },
+  "keywords": [
+    "functional",
+    "oxygen",
+    "extension",
+    "programming",
+    "language",
+    "compiler",
+    "interpreter"
+  ],
+  "author": "minsithu",
+  "license": "MIT",
+  "dependencies": {
+    "parcel": "^1.12.4"
+  }
+}
