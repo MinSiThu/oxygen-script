@@ -8,7 +8,7 @@ npm i oxygen-script
 
 In browser
 ```js
-<script src="https://unpkg.com/oxygen-script@1.0.0/dist/index.js"></script>
+<script src="https://unpkg.com/oxygen-script@1.0.2/dist/index.js"></script>
 ```
 
 It adds an extension of function style writing to javascript and provides a syntatic sugar for functional programming.
