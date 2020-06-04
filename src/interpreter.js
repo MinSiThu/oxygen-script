@@ -5,7 +5,7 @@ import {Libs} from "./lib";
 // pipe
 const pipe = (...fns)=>{
     return (code)=>{
-        fns.reduce((accumulator,fn)=>fn(accumulator),code);
+        return fns.reduce((accumulator,fn)=>fn(accumulator),code);
     }
 }
 
@@ -82,7 +82,7 @@ const callstack = [];
 const Heap = [];
 
 const exec = (node)=>{
-    console.log(node);
+   // console.log(node);
     
     if(node.type == "Operator"){
         if(Libs.hasOwnProperty(node.value)){
@@ -106,12 +106,6 @@ const exec = (node)=>{
     }
 }
 
-let dom = (input)=>{
-    let code = document.createElement("code");
-    code.innerText = input;
-    document.body.appendChild(code);
-}
-
-export function intrepret(code){
-    pipe(tokenize,filterToken,parse,exec,dom)(code)
+export function interpret(code){
+    return pipe(tokenize,filterToken,parse,exec)(code)
 }

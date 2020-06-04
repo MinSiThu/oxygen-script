@@ -1,8 +1,4 @@
-import {intrepret} from "./interpreter";
+import {interpret} from "./interpreter";
+import {Libs} from "./lib";
 
-let code = `
-    concat "Java15" mul 5 add 2 4 
-
-`
-
-intrepret(code);
+export default {interpret,Libs};
