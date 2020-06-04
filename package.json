@@ -1,11 +1,11 @@
 {
   "name": "oxygen-script",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "functional extension in javascript",
   "main": "./dist/index.js",
   "scripts": {
-    "dev":"parcel ./src/index.html",
-    "build":"parcel ./src/index.js"
+    "dev": "parcel ./src/index.html",
+    "build": "parcel ./src/index.js"
   },
   "repository": {
     "type": "git",
